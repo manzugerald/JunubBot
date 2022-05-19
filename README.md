@@ -8,7 +8,7 @@ It uses open source tools to interract with twitter, and host/ launch online. Th
 1. Built using Python
 2. Uses the Tweepy Library, for Accessing the Twitter API
 3. Hosted on GitHub (Any changes updated in the main branch automatically launches on Heroku, where the app is hosted)
-4. Uses Heroku for hosting / running the bot 24/7.
+4. Uses Heroku for hosting / running the bot 24/7 with a heroku account
 
 ### More about the Bot
 Junub Bot streams Twitter and actively listens to tweets that contain elements passed in a list. Any Tweet mentioning words in the list are automatically favourited (liked), and then retweeted.
