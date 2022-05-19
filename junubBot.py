@@ -96,7 +96,7 @@ class StreamListener(tweepy.StreamListener):
                     blocked_words_monitor.append(word)
             if len(blocked_words_monitor) != 0:
                 print("The blocked words are {} and nothing will be retweeted.".format(blocked_words_monitor))
-                print("The text from the tweet is here ........--------............{}".format(status.text))
+                print("The text from the tweet is here .......--------...........{}".format(status.text))
                 return
             else:
                 try:
