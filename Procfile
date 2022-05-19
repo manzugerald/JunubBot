@@ -1,1 +1,1 @@
-web: gunicorn junubBot.wsgi
+worker: python junubBot.py
