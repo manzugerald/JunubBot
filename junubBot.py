@@ -56,7 +56,8 @@ class StreamListener(tweepy.StreamListener):
             'ImmigrantsBlack','kirwa400','thirdbrainfx','BlaqGold211','abdullah_who1','QualitySsd','VonBabyJB','VonbabyJB064',
             'MckaylaMyers123','VetsFlagatGmail','gum_ater','EricaGalvin3','_GenocideDenier','Dylan40405249','I_Find_Species',
             'The_1_one','Raipperi','jal_biel','every98seconds_','BongaPoppy','edward_apet','ExcusesBot','NyanwangkeiM',
-            'undoh','AlexMauricioZe2','manufacturer888','K3NYIJHN','mimi12_sadia']
+            'undoh','AlexMauricioZe2','manufacturer888','K3NYIJHN','mimi12_sadia',
+            'PGHBot']
             user_tweet = status.user.screen_name
 
             blocked_uza = []
