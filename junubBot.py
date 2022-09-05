@@ -57,7 +57,7 @@ class StreamListener(tweepy.StreamListener):
             'MckaylaMyers123','VetsFlagatGmail','gum_ater','EricaGalvin3','_GenocideDenier','Dylan40405249','I_Find_Species',
             'The_1_one','Raipperi','jal_biel','every98seconds_','BongaPoppy','edward_apet','ExcusesBot','NyanwangkeiM',
             'undoh','AlexMauricioZe2','manufacturer888','mimi12_sadia',
-            'PGHBot','AlemTiop','MahouRoboujo','JustineDhieu','Gatluakofficial',
+            'PGHBot','AlemTiop','MahouRoboujo','JustineDhieu','Gatluakofficial','Odumodulfa',
             'Tajcorp211','samson_FG','kennkiritu']
             user_tweet = status.user.screen_name
 
