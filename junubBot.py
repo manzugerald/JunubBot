@@ -49,7 +49,7 @@ class StreamListener(tweepy.StreamListener):
             blocked_users = ['sheikhO12784972','yxvngdvke','cholphela','Gatyangkai20','yahyaah74050732','Salifu14905216','Mutrovic_junior','InsightJuba','EmmsEmms1','permworldcup','happyhealth','blackgayvideo','KenyiKennedy5','BrosMam97','brintonmarcus','KelDuol','BlinqWizzo',
             'HotXXX88086094', 'mehedimxbd','UgandaIllumin13','kakwaSon','AmosAngong','KakuwaSon','BustaLime91','LuxonSpencer','King_Chris_Jr',
             '80daysbot','WarsGenerator','authenticfabric','dengtielakol', 'githeko','AtWarBot','ConstrainBot',
-            'whereistheiss','animal_tech_cop', 'MalongThiel','michael27297382','anaabot','GebregziabherW1','Lokudubenjamin1',
+            'whereistheiss','animal_tech_cop', 'MalongThiel','michael27297382','anaabot','GebregziabherW1','Lokudubenjamin1','anna_store6',
             'AC_5230','Thurjang6','michael92367701', 'lyndasc25576386','xpstudiospnguin', 'BrosMam97','richmulondo',
             'SUDANISPICE','MajokBeny','AC_5230','indyfroggy','bot_hamster','Majhi_Marathi','kiha72yufumori','LongLiveLeech',
             'realdavidtarus', 'lilyesha_lilye','RandolphNews1','NILEVONNILE', 'dreadlocks254','DgohnieO','Supp0rtSqu1rrel',
