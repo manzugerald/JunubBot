@@ -52,7 +52,7 @@ class StreamListener(tweepy.StreamListener):
             'whereistheiss','animal_tech_cop', 'MalongThiel','michael27297382','anaabot','GebregziabherW1','Lokudubenjamin1','anna_store6',
             'AC_5230','Thurjang6','michael92367701', 'lyndasc25576386','xpstudiospnguin', 'BrosMam97','richmulondo',
             'SUDANISPICE','MajokBeny','AC_5230','indyfroggy','bot_hamster','Majhi_Marathi','kiha72yufumori','LongLiveLeech','CheeseFactsBot1','CheeseFactsBot',
-            'realdavidtarus', 'lilyesha_lilye','RandolphNews1','NILEVONNILE', 'dreadlocks254','DgohnieO','Supp0rtSqu1rrel','EdemaEnterpris1'
+            'realdavidtarus', 'lilyesha_lilye','RandolphNews1','NILEVONNILE', 'dreadlocks254','DgohnieO','Supp0rtSqu1rrel','EdemaEnterpris1',
             'ImmigrantsBlack','kirwa400','thirdbrainfx','BlaqGold211','abdullah_who1','QualitySsd','VonBabyJB','VonbabyJB064',
             'MckaylaMyers123','VetsFlagatGmail','gum_ater','EricaGalvin3','_GenocideDenier','Dylan40405249','I_Find_Species','santo_oketayot',
             'The_1_one','Raipperi','jal_biel','every98seconds_','BongaPoppy','edward_apet','ExcusesBot','NyanwangkeiM',
