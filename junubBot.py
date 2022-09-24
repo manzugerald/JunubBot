@@ -37,7 +37,7 @@ class StreamListener(tweepy.StreamListener):
 
         if hasattr(status, 'retweeted_status'):
             print('{} is not the original author of the tweet. Escaping retweet action....'. format(status.user.screen_name))
-            time.sleep(1j)
+            time.sleep(1)
             return
         # if not status.retweeted and not status.is_quote_status:
         #     if status.user.statuses_count < 100:
