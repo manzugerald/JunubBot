@@ -41,7 +41,7 @@ class StreamListener(tweepy.StreamListener):
             return
         # if not status.retweeted and not status.is_quote_status:
         #     if status.user.statuses_count < 100:
-        #         print('The user has {} number of tweets only'. format(str(status.user.statuses_count)))
+        #         print('The user has {} number of tweets only'. format(str(status.user.statues_count)))
         #         #time.slp
         #         re
         if not status.is_quote_status:
