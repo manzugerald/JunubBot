@@ -41,7 +41,7 @@ class StreamListener(tweepy.StreamListener):
             return
         # if not status.retweeted and not status.is_quote_status:
         #     if status.user.statuses_count < 100:
-        #         print('The user has {} number of tweets only'. format(str(status.user.statues_
+        #         print('The user has {} number of tweets only'. format(str(status.user.statues
         if not status.is_quote_status:
             blocked_users = ['sheikhO12784972','yxvngdvke','cholphela','Gatyangkai20','yahyaah74050732','Salifu14905216','Mutrovic_junior','InsightJuba','EmmsEmms1','permworldcup','happyhealth','blackgayvideo','KenyiKennedy5','BrosMam97','brintonmarcus','KelDuol','BlinqWizzo',
             'HotXXX88086094', 'mehedimxbd','UgandaIllumin13','kakwaSon','AmosAngong','KakuwaSon','BustaLime91','LuxonSpencer','King_Chris_Jr',
