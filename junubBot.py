@@ -40,7 +40,7 @@ class StreamListener(tweepy.StreamListener):
             time.sleep(1)
             return
         #if not status.retweeted and not status.is_quote_status:
-        #tatu.s
+        #tatu.
         #
         if not status.is_quote_status:
             blocked_users = ['sheikhO12784972','yxvngdvke','cholphela','Gatyangkai20','yahyaah74050732','Salifu14905216','Mutrovic_junior','InsightJuba','EmmsEmms1','permworldcup','happyhealth','blackgayvideo','KenyiKennedy5','BrosMam97','brintonmarcus','KelDuol','BlinqWizzo',
