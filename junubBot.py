@@ -42,7 +42,7 @@ class StreamListener(tweepy.StreamListener):
         #if not status.retw
         # 
         # 
-        # eetedan no tu
+        # eetedn no tu
         # 
         # is_quote_st
         if not status.is_quote_status:
