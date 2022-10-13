@@ -39,7 +39,7 @@ class StreamListener(tweepy.StreamListener):
             print('{} is not the original author of the tweet. Escaping retweet action....'. format(status.user.screen_name))
             time.sleep(1)
             return
-        #if not status.retw
+        #if not satus.retw
         # 
         # 
         # ete no tu
