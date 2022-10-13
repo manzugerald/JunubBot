@@ -41,7 +41,7 @@ class StreamListener(tweepy.StreamListener):
             return
         #if not satus.retw
         # 
-        # 
+        #
         # 
         # is_quote_st
         if not status.is_quote_status:
