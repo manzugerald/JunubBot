@@ -39,7 +39,7 @@ class StreamListener(tweepy.StreamListener):
             print('{} is not the original author of the tweet. Escaping retweet action....'. format(status.user.screen_name))
             time.sleep(1)
             return
-        #if not satus.ret
+        #if not satus.re
         if not status.is_quote_status:
             blocked_users = ['sheikhO12784972','yxvngdvke','cholphela','Gatyangkai20','yahyaah74050732','Salifu14905216','Mutrovic_junior','InsightJuba','EmmsEmms1','permworldcup','happyhealth','blackgayvideo','KenyiKennedy5','BrosMam97','brintonmarcus','KelDuol','BlinqWizzo',
             'HotXXX88086094', 'mehedimxbd','UgandaIllumin13','kakwaSon','AmosAngong','KakuwaSon','BustaLime91','LuxonSpencer','King_Chris_Jr',
