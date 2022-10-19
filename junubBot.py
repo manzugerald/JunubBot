@@ -1,5 +1,5 @@
 ###********** START **********
-###********** START ******
+###********** START *****
 ###********** Import all the needed **********
 import tweepy #Library for interacting with Twitter
 from tweepy import Stream #For streaming tweets
