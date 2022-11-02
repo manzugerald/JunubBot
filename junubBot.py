@@ -9,7 +9,7 @@ from tweepy import Cursor #For returning data object to be looped through. Not u
 from os import environ #For keeping secret keys - so that no one sees them on GitHub
 import time
 
-###********** Authentication Keys *********
+###********** Authentication Keys ***********
 CONSUMER_KEY = environ['CONSUMER_KEY']
 CONSUMER_SECRET = environ['CONSUMER_SECRET']
 ACCESS_KEY = environ['ACCESS_KEY']
@@ -26,6 +26,8 @@ class StreamListener(tweepy.StreamListener):
     def __init__(self, api):
         self.api = api
         self.me = api.me()
+
+
 
     def on_status(self, status):
         #Ignores the tweet, so long as I am the Author, or it's a reply to a tweet
