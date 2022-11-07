@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 ###********** START **********
 ###********** Import all the needed **********
+=======
+###************** START ***************************
+###************ Import all the needed *************
+>>>>>>> 211b2686cd5b60f9732e62c03822e9beaf4a9881
 import tweepy #Library for interacting with Twitter
 from tweepy import Stream #For streaming tweets
 from tweepy import OAuthHandler # handles Authentication
@@ -9,7 +14,7 @@ from tweepy import Cursor #For returning data object to be looped through. Not u
 from os import environ #For keeping secret keys - so that no one sees them on GitHub
 import time
 
-###********** Authentication Keys *********
+###********** Authentication Keys ***********************************
 CONSUMER_KEY = environ['CONSUMER_KEY']
 CONSUMER_SECRET = environ['CONSUMER_SECRET']
 ACCESS_KEY = environ['ACCESS_KEY']
@@ -26,6 +31,8 @@ class StreamListener(tweepy.StreamListener):
     def __init__(self, api):
         self.api = api
         self.me = api.me()
+
+
 
     def on_status(self, status):
         #Ignores the tweet, so long as I am the Author, or it's a reply to a tweet
@@ -50,7 +57,8 @@ class StreamListener(tweepy.StreamListener):
             'The_1_one','Raipperi','jal_biel','every98seconds_','BongaPoppy','edward_apet','ExcusesBot','NyanwangkeiM',
             'undoh','AlexMauricioZe2','manufacturer888','mimi12_sadia',
             'PGHBot','AlemTiop','MahouRoboujo','JustineDhieu','Gatluakofficial','Odumodulfa','enger_mayar',
-            'Tajcorp211','samson_FG','kennkiritu','GiuFred','CitNeedBot']
+            'Tajcorp211','samson_FG','kennkiritu','GiuFred','CitNeedBot',
+            'baba12676790']
             user_tweet = status.user.screen_name
 
             blocked_uza = []
