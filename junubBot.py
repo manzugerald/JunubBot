@@ -104,7 +104,7 @@ class StreamListener(tweepy.StreamListener):
                     print("Retweeted tweet from "+ status.user.screen_name)
                     print('+++++++++++++++++++++++++')
                     print(status.text)
-                    print('+++++++++++++++++++++++++')
+                    print('++++++++++++++++++++++++++')
                     time.sleep(25)
                     return
                 except tweepy.error.TweepError as e:
