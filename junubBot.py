@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 ###********** START **********
 ###********** Import all the needed **********
-=======
 ###************** START ***************************
 ###************ Import all the needed *************
->>>>>>> 211b2686cd5b60f9732e62c03822e9beaf4a9881
 import tweepy #Library for interacting with Twitter
 from tweepy import Stream #For streaming tweets
 from tweepy import OAuthHandler # handles Authentication
