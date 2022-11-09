@@ -12,7 +12,7 @@ from os import environ #For keeping secret keys - so that no one sees them on Gi
 import time
 
 ###********** Authentication Keys ***********
-*********
+**********
 CONSUMER_KEY = environ['CONSUMER_KEY']
 CONSUMER_SECRET = environ['CONSUMER_SECRET']
 ACCESS_KEY = environ['ACCESS_KEY']
