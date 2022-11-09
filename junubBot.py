@@ -10,7 +10,6 @@ from tweepy import API #Twitter API to interact with Twitter data
 from tweepy import Cursor #For returning data object to be looped through. Not used though
 from os import environ #For keeping secret keys - so that no one sees them on GitHub
 import time
-
 ###********** Authentication Keys ***********
 ****
 CONSUMER_KEY = environ['CONSUMER_KEY']
