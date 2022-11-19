@@ -1,5 +1,5 @@
 ###********** START ******************
-###********** Import all the needed ******************8
+###********** Import all the needed ******************
 ###************** START *******************************************
 ###************ Import all the needed ******************************
 import tweepy #Library for interacting with Twitter
