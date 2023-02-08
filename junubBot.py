@@ -1,7 +1,7 @@
-###************* START ***********************************************************
-###**************** Import all the needed **************************************8
-###***************** START *******************************************
-###******************** Import all the needed ****************************
+###********** START ******************************************
+###********** Import all the needed **************************
+###************** START ***************************************
+###************ Import all the needed *****************************
 import tweepy #Library for interacting with Twitter
 from tweepy import Stream #For streaming tweets
 from tweepy import OAuthHandler # handles Authentication
@@ -53,8 +53,8 @@ class StreamListener(tweepy.StreamListener):
             'The_1_one','Raipperi','jal_biel','every98seconds_','BongaPoppy','edward_apet','ExcusesBot','NyanwangkeiM',
             'undoh','AlexMauricioZe2','manufacturer888','mimi12_sadia',
             'PGHBot','AlemTiop','MahouRoboujo','JustineDhieu','Gatluakofficial','Odumodulfa','enger_mayar',
-            'Tajcorp211','samson_FG','kennkiritu','GiuFred','CitNeedBot','UseSaitaPr0','DukumijiDuk',
-            'baba12676790']
+            'Tajcorp211','samson_FG','kennkiritu','GiuFred','CitNeedBot',
+            'baba12676790', 'GoTenders']
             user_tweet = status.user.screen_name
 
             blocked_uza = []
