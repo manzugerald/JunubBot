@@ -53,7 +53,7 @@ class StreamListener(tweepy.StreamListener):
             'The_1_one','Raipperi','jal_biel','every98seconds_','BongaPoppy','edward_apet','ExcusesBot','NyanwangkeiM',
             'undoh','AlexMauricioZe2','manufacturer888','mimi12_sadia',
             'PGHBot','AlemTiop','MahouRoboujo','JustineDhieu','Gatluakofficial','Odumodulfa','enger_mayar',
-            'Tajcorp211','samson_FG','kennkiritu','GiuFred','CitNeedBot',
+            'Tajcorp211','samson_FG','kennkiritu','GiuFred','CitNeedBot','UseSaitaPr0',
             'baba12676790']
             user_tweet = status.user.screen_name
 
