@@ -81,7 +81,7 @@ class StreamListener(tweepy.StreamListener):
             'ugly','horny', 'bitch','penis','vagina','Illuminati', 'pornography','tribes', 'sarmuta',
             'biafra','WarsGenerator','authenticfabric', 'timor','ambazon','Email List',
             'nuer tribe', 'dinka tribe', 'killing','genocide', 'Turkey', 'Russia', 'China', 'India', 
-            'Ethiopia','DECLARED WAR','email list','peed','wetted','south sudan president']
+            'Ethiopia','DECLARED WAR','email list','peed','wetted']
             blocked_words_final = []
             for n in blocked_words:
                 blocked_words_final.append(n.lower())
