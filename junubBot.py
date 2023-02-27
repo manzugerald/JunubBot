@@ -54,7 +54,7 @@ class StreamListener(tweepy.StreamListener):
             'undoh','AlexMauricioZe2','manufacturer888','mimi12_sadia',
             'PGHBot','AlemTiop','MahouRoboujo','JustineDhieu','Gatluakofficial','Odumodulfa','enger_mayar',
             'Tajcorp211','samson_FG','kennkiritu','GiuFred','CitNeedBot','UseSaitaPr0','DukumijiDuk','MadingKuchiek',
-            'baba12676790']
+            'baba12676790','therealbaby1942']
             user_tweet = status.user.screen_name
 
             blocked_uza = []
