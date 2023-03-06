@@ -42,19 +42,19 @@ class StreamListener(tweepy.StreamListener):
             return
         if not status.is_quote_status:
             blocked_users = ['sheikhO12784972','yxvngdvke','cholphela','Gatyangkai20','yahyaah74050732','Salifu14905216','Mutrovic_junior','InsightJuba','EmmsEmms1','permworldcup','happyhealth','blackgayvideo','KenyiKennedy5','BrosMam97','brintonmarcus','KelDuol','BlinqWizzo',
-            'HotXXX88086094', 'mehedimxbd','UgandaIllumin13','kakwaSon','AmosAngong','KakuwaSon','BustaLime91','LuxonSpencer','King_Chris_Jr',
+            'HotXXX88086094', 'mehedimxbd','UgandaIllumin13','kakwaSon','AmosAngong','KakuwaSon','BustaLime91','LuxonSpencer','King_Chris_Jr','JokDuut',
             '80daysbot','WarsGenerator','authenticfabric','dengtielakol', 'githeko','AtWarBot','ConstrainBot',
             'whereistheiss','animal_tech_cop', 'MalongThiel','michael27297382','anaabot','GebregziabherW1','Lokudubenjamin1','anna_store6','TV9Bihar',
             'AC_5230','Thurjang6','michael92367701', 'lyndasc25576386','xpstudiospnguin', 'BrosMam97','richmulondo',
             'SUDANISPICE','MajokBeny','AC_5230','indyfroggy','bot_hamster','Majhi_Marathi','kiha72yufumori','LongLiveLeech','CheeseFactsBot1','CheeseFactsBot',
-            'realdavidtarus', 'lilyesha_lilye','RandolphNews1','NILEVONNILE', 'dreadlocks254','DgohnieO','Supp0rtSqu1rrel','EdemaEnterpris1',
+            'realdavidtarus', 'lilyesha_lilye','RandolphNews1','NILEVONNILE', 'dreadlocks254','DgohnieO','Supp0rtSqu1rrel','EdemaEnterpris1','K3NYII',
             'ImmigrantsBlack','kirwa400','thirdbrainfx','BlaqGold211','abdullah_who1','QualitySsd','VonBabyJB','VonbabyJB064',
-            'MckaylaMyers123','VetsFlagatGmail','gum_ater','EricaGalvin3','_GenocideDenier','Dylan40405249','I_Find_Species','santo_oketayot',
+            'MckaylaMyers123','VetsFlagatGmail','gum_ater','EricaGalvin3','_GenocideDenier','Dylan40405249','I_Find_Species','santo_oketayot','Josephgichuhi17',
             'The_1_one','Raipperi','jal_biel','every98seconds_','BongaPoppy','edward_apet','ExcusesBot','NyanwangkeiM',
             'undoh','AlexMauricioZe2','manufacturer888','mimi12_sadia',
-            'PGHBot','AlemTiop','MahouRoboujo','JustineDhieu','Gatluakofficial','Odumodulfa','enger_mayar',
+            'PGHBot','AlemTiop','MahouRoboujo','JustineDhieu','Gatluakofficial','Odumodulfa','enger_mayar','Tabankam',
             'Tajcorp211','samson_FG','kennkiritu','GiuFred','CitNeedBot','UseSaitaPr0','DukumijiDuk','MadingKuchiek',
-            'baba12676790','therealbaby1942','hollyrjlima1','HonMunuki']
+            'baba12676790','therealbaby1942','hollyrjlima1','HonMunuki','Carribean3_','gudelebwoy']
             user_tweet = status.user.screen_name
 
             blocked_uza = []
