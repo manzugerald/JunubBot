@@ -20,7 +20,10 @@ ACCESS_SECRET = environ['ACCESS_SECRET']
 auth = tweepy.OAuthHandler(CONSUMER_KEY,CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY,ACCESS_SECRET)
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
-
+if api:
+    print("The Authentication was successful")
+else:
+    print("The Authentication had issues")
 ###********** Build a streamListener class that will listen to tweets based on an embedded track list **********
 class StreamListener(tweepy.StreamListener):
     #The first method is the constructor, which takes the API for Authentication
