@@ -29,7 +29,7 @@ class StreamListener(tweepy.Stream):
     #The first method is the constructor, which takes the API for Authentication
     def __init__(self, api):
         self.api = api
-        self.me = api.me()
+        #self.me = api.me()
 
 
 
