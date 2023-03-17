@@ -133,6 +133,7 @@ ssd_list = ["South Sudan","South Sudanese","#SouthSudanese","junubin","junub bot
 #The dot filter method takes one parameter, the list to be tracked.
 lang_retweets = ['en-GB', 'en-IE', 'en-US', 'en-ZA', 'ar-SA']
 stream.filter(track=ssd_list)
+stream.sample()
 ###********** END **********
 ###********** END **********
 ###********** END **********
