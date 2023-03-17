@@ -115,7 +115,8 @@ class StreamListener(tweepy.StreamListener):
         self.status_code = status_code
         if tweepy.error.TweepError:
             print("Error from limits with code {}".format(self.status_code))
-            raise tweepy.error.TweepError
+            #raise tweepy.error.TweepError
+            
 #Calling the class
 stream_listener = StreamListener(api)
 #Connecting the listener to the Stream
