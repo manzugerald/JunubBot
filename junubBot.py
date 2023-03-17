@@ -21,6 +21,11 @@ BEARER_TOKEN = environ['Bearer_Token']
 client = tweepy.Client(BEARER_TOKEN,CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET)
 auth = tweepy.OAuth1UserHandler(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET)
 api = tweepy.API(auth)
+if api:
+    try:
+        print("Successfully authenticated")
+    except:
+        print("Problem Authenticating")
 
 class MyStream(tweepy.StreamingClient):
     def on_tweet(self,tweet):
