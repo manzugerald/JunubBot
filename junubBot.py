@@ -124,15 +124,15 @@ class StreamListener(tweepy.Stream):
                 raise tweepy.error.TweepError
             
 #Calling the class
-stream_listener = Stream(auth, StreamListener(api))
+stream_listener = StreamListener(api)
 #Connecting the listener to the Stream
-#stream = tweepy.Stream(auth=api.auth, listener=stream_listener)
+stream = tweepy.Stream(api.auth, stream_listener)
 #Passing a items into a list that will be used as a track list. The bot retweets anything that mentions the following
 ssd_list = ["South Sudan","South Sudanese","#SouthSudanese","junubin","junub bot","junubeen","#SSOT_tweets","#SouthSudan","#SSOT", "@junub_bot","gerald manzu"]
 #The dot filter method takes one parameter, the list to be tracked.
 lang_retweets = ['en-GB', 'en-IE', 'en-US', 'en-ZA', 'ar-SA']
 stream_listener.filter(track=ssd_list)
-stream_listener.sample()
+#stream_listener.sample()
 ###********** END **********
 ###********** END **********
 ###********** END **********
