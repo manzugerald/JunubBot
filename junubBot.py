@@ -17,7 +17,7 @@ ACCESS_KEY = environ['ACCESS_KEY']
 ACCESS_SECRET = environ['ACCESS_SECRET']
 
 ###********** Authentication **********
-auth = tweepy.OAuthHandler(CONSUMER_KEY,CONSUMER_SECRET)
+auth = tweepy.OAuth2Handler(CONSUMER_KEY,CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY,ACCESS_SECRET)
 api = tweepy.API(auth, wait_on_rate_limit=True)
 if api:
@@ -126,12 +126,13 @@ class StreamListener(tweepy.Stream):
 #Calling the class
 stream_listener = StreamListener(api)
 #Connecting the listener to the Stream
-stream = tweepy.Stream(auth=api.auth, listener=stream_listener)
+#stream = tweepy.Stream(auth=api.auth, listener=stream_listener)
+stream  = tweepy.Stream(consumer_key=CONSUMER_KEY, consumer_secret = CONSUMER_SECRET, access_token = ACCESS_KEY, access_token_secret= ACCESS_SECRET)
 #Passing a items into a list that will be used as a track list. The bot retweets anything that mentions the following
 ssd_list = ["South Sudan","South Sudanese","#SouthSudanese","junubin","junub bot","junubeen","#SSOT_tweets","#SouthSudan","#SSOT", "@junub_bot","gerald manzu"]
 #The dot filter method takes one parameter, the list to be tracked.
 lang_retweets = ['en-GB', 'en-IE', 'en-US', 'en-ZA', 'ar-SA']
-stream.filter(track= ssd_list)
+stream.filter(ssd_list)
 ###********** END **********
 ###********** END **********
 ###********** END **********
