@@ -5,7 +5,7 @@
 import tweepy #Library for interacting with Twitter
 from tweepy import Stream #For streaming tweets
 from tweepy import OAuthHandler # handles Authentication
-from tweepy.streaming import StreamListener #To listen on live tweets
+#from tweepy.streaming import StreamListener #To listen on live tweets
 from tweepy import API #Twitter API to interact with Twitter data
 from tweepy import Cursor #For returning data object to be looped through. Not used though
 from os import environ #For keeping secret keys - so that no one sees them on GitHub
@@ -25,7 +25,7 @@ if api:
 else:
     print("The Authentication had issues")
 ###********** Build a streamListener class that will listen to tweets based on an embedded track list **********
-class StreamListener(tweepy.StreamListener):
+class StreamListener(tweepy.Stream):
     #The first method is the constructor, which takes the API for Authentication
     def __init__(self, api):
         self.api = api
