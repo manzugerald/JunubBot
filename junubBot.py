@@ -127,7 +127,7 @@ class StreamListener(tweepy.Stream):
 stream_listener = StreamListener(api)
 #Connecting the listener to the Stream
 #stream = tweepy.Stream(auth=api.auth, listener=stream_listener)
-stream  = StreamListener(consumer_key=CONSUMER_KEY, consumer_secret = CONSUMER_SECRET, access_token = ACCESS_KEY, access_token_secret= ACCESS_SECRET)
+stream  = StreamListener()
 #Passing a items into a list that will be used as a track list. The bot retweets anything that mentions the following
 ssd_list = ["South Sudan","South Sudanese","#SouthSudanese","junubin","junub bot","junubeen","#SSOT_tweets","#SouthSudan","#SSOT", "@junub_bot","gerald manzu"]
 #The dot filter method takes one parameter, the list to be tracked.
