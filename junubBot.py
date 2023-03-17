@@ -124,7 +124,7 @@ class StreamListener(tweepy.Stream):
                 raise tweepy.error.TweepError
             
 #Calling the class
-stream_listener = StreamListener(auth)
+stream_listener = Stream(auth, StreamListener())
 #Connecting the listener to the Stream
 #stream = tweepy.Stream(auth=api.auth, listener=stream_listener)
 #Passing a items into a list that will be used as a track list. The bot retweets anything that mentions the following
