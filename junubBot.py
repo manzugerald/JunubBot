@@ -33,3 +33,4 @@ class MyStream(tweepy.StreamingClient):
 stream = MyStream(BEARER_TOKEN)
 rule = tweepy.StreamRule("(#SouthSudan OR #SSOT) (-is:retweet -is:reply)")
 stream.add_rules(rule, dry_run=True)
+stream.filter()
