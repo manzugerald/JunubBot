@@ -132,7 +132,7 @@ stream  = tweepy.Stream(consumer_key=CONSUMER_KEY, consumer_secret = CONSUMER_SE
 ssd_list = ["South Sudan","South Sudanese","#SouthSudanese","junubin","junub bot","junubeen","#SSOT_tweets","#SouthSudan","#SSOT", "@junub_bot","gerald manzu"]
 #The dot filter method takes one parameter, the list to be tracked.
 lang_retweets = ['en-GB', 'en-IE', 'en-US', 'en-ZA', 'ar-SA']
-stream.filter(track=ssd_list)
+stream.filter(track=ssd_list, threaded=True)
 stream.sample()
 ###********** END **********
 ###********** END **********
