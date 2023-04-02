@@ -1,4 +1,4 @@
-###************* START *************
+###************* START **************
 import tweepy #Library for interacting with Twitter
 from tweepy import Stream #For streaming tweets
 from tweepy import OAuthHandler # handles Authentication
