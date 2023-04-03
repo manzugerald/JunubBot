@@ -26,9 +26,11 @@ class TwitterStream(tweepy.StreamingClient):
         print("You have successfully connected")
     def on_tweet(self, tweet):
         if tweet.referenced_tweets == None: 
+            #blockedUsers = [995315995840536576]
+            userID = tweet.author_id
             print(tweet.text)
             client.retweet(tweet.id)
-            print("Successfully retweeted")
+            print("Successfully retweeted a tweet from this id{}".format(userID))
             time.sleep(50)
     
     # def on_data(self, data):
