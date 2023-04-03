@@ -29,15 +29,14 @@ class TwitterStream(tweepy.StreamingClient):
             blockedUsers = ['995315995840536576','866227142429999105','2467565462']
             blockedUsersInt = [eval(i) for i in blockedUsers]
             userID = int(tweet.author_id)
+            blockedID = []
             for user in blockedUsersInt:
                 if user == userID:
-                    print("JJJJJJJJJJJJJJJJJJJJJJJJJJ")
-                    print(user)
-                    print(type(user))
-                    print(userID)
-                    print(type(userID))
-                    print("JJJJJJJJJJJJJJJJJJJJJJJJJJ")
-                    print("Sorry, this TWEEP's tweets {} have been flagged by our Algorithm".format(user))
+                    blockedID.append(user)
+                if len(blockedID) !=0:
+                    print("Grrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr")
+                    print("Sorry, this TWEEP's tweets {} have been flagged by our Algorithm".format(blockedID))
+                    ("Grrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr")
                     return
                 else:
                     print(tweet.text)
