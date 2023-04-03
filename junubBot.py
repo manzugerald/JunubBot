@@ -28,7 +28,7 @@ class TwitterStream(tweepy.StreamingClient):
         if tweet.referenced_tweets == None: 
             blockedUsers = ['995315995840536576','866227142429999105','2467565462']
             blockedUsersInt = [eval(i) for i in blockedUsers]
-            userID = int(tweet.author_id)
+            userID = int(tweet.id)
             for user in blockedUsersInt:
                 if user == userID:
                     print("JJJJJJJJJJJJJJJJJJJJJJJJJJ")
