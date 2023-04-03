@@ -30,7 +30,8 @@ class TwitterStream(tweepy.StreamingClient):
             userID = tweet.author_id
             print(tweet.text)
             client.retweet(tweet.id)
-            print("Successfully retweeted a tweet from this id{}".format(userID))
+            print("Successfully retweeted a tweet from this id {}".format(userID))
+            print(type(userID))
             time.sleep(50)
     
     # def on_data(self, data):
