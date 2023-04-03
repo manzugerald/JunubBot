@@ -27,9 +27,9 @@ class TwitterStream(tweepy.StreamingClient):
     def on_tweet(self, tweet):
         if tweet.referenced_tweets == None: 
             blockedUsers = [995315995840536576,866227142429999105,2467565462]
-            userID = tweet.author_id
+            userID = int(tweet.author_id)
             for user in blockedUsers:
-                if user == userID:
+                if int(user) == int(userID):
                     print("Sorry, this TWEEP's tweets {} have been flagged by our Algorithm".format(user))
                     return
                 else:
