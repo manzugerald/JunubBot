@@ -31,10 +31,22 @@ class TwitterStream(tweepy.StreamingClient):
             userID = int(tweet.author_id)
             for user in blockedUsersInt:
                 if user == userID:
+                    print("JJJJJJJJJJJJJJJJJJJJJJJJJJ")
+                    print(user)
+                    print(type(user))
+                    print(userID)
+                    print(type(userID))
+                    print("JJJJJJJJJJJJJJJJJJJJJJJJJJ")
                     print("Sorry, this TWEEP's tweets {} have been flagged by our Algorithm".format(user))
                     return
                 else:
                     print(tweet.text)
+                    print("Heyyyyyyyyyyyyyyyyyyyyyyyy")
+                    print(user)
+                    print(type(user))
+                    print(userID)
+                    print(type(userID))
+                    print("Heyyyyyyyyyyyyyyyyyyyyyyyy")
                     client.retweet(tweet.id)
                     print("Successfully retweeted a tweet from this id {}".format(userID))
                     print(type(userID))
