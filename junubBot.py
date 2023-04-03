@@ -33,23 +33,23 @@ class TwitterStream(tweepy.StreamingClient):
             for user in blockedUsersInt:
                 if user == userID:
                     blockedID.append(user)
-                if len(blockedID) !=0:
-                    print("Grrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr")
-                    print("Sorry, this TWEEP's tweets {} have been flagged by our Algorithm".format(blockedID))
-                    ("Grrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr")
-                    return
-                else:
-                    print(tweet.text)
-                    print("Heyyyyyyyyyyyyyyyyyyyyyyyy")
-                    print(user)
-                    print(type(user))
-                    print(userID)
-                    print(type(userID))
-                    print("Heyyyyyyyyyyyyyyyyyyyyyyyy")
-                    client.retweet(tweet.id)
-                    print("Successfully retweeted a tweet from this id {}".format(userID))
-                    print(type(userID))
-                    time.sleep(50)
+            if len(blockedID) !=0:
+                print("Grrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr")
+                print("Sorry, this TWEEP's tweets {} have been flagged by our Algorithm".format(blockedID))
+                ("Grrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr")
+                return
+            else:
+                print(tweet.text)
+                print("Heyyyyyyyyyyyyyyyyyyyyyyyy")
+                print(user)
+                print(type(user))
+                print(userID)
+                print(type(userID))
+                print("Heyyyyyyyyyyyyyyyyyyyyyyyy")
+                client.retweet(tweet.id)
+                print("Successfully retweeted a tweet from this id {}".format(userID))
+                print(type(userID))
+                time.sleep(50)
     
     # def on_data(self, data):
     #     tweep_data = json.loads(data)
