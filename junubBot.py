@@ -37,6 +37,7 @@ class TwitterStream(tweepy.StreamingClient):
                 print("**********************************************")
                 print("Oppsssssssssssssssssssssssssss!")
                 print("Sorry, this TWEEP's tweets with the ID '{}' have been flagged by our Algorithm. As such, a breach of our retweet policy means a retweet isn't possible. Contact @Admin Gerald Manzu - Developer, for a clarification of this policy and the algorithm".format(blockedID))
+                print("The tweet content is '{}'".format(tweet.text))
                 print("**********************************************")
                 return
             else:
