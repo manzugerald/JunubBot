@@ -60,26 +60,17 @@ class TwitterStream(tweepy.StreamingClient):
                 print("The word '{}' is blocked".format(blockedWordMonitor))
                 return
             else:
-                print(tweet.text)
-                print("Heyyyyyyyyyyyyyyyyyyyyyyyy")
-                print(user)
-                print(type(user))
-                print(userID)
-                print(type(userID))
-                print("Heyyyyyyyyyyyyyyyyyyyyyyyy")
                 client.retweet(tweet.id)
-                print("Successfully retweeted a tweet from this id {}".format(userID))
-                print(type(userID))
+                print("************************************")
+                print("Successfully retweeted a tweet from this id {}. The content of the tweet is {}".format(userID, tweet.text))
+                print("************************************")
                 time.sleep(25)
-    
     # def on_data(self, data):
     #     tweep_data = json.loads(data)
     #     tweep_username = tweep_data['includes']['users'][0]['username']
     #     self.user_name = tweep_username
     #     print(self.user_name)
     #     return
-  
-
     def on_errors(self, errors):
         return errors
 
