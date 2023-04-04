@@ -5,9 +5,8 @@ from tweepy import OAuthHandler # handles Authentication
 #from tweepy.streaming import StreamListener #To listen on live tweets
 from tweepy import StreamingClient 
 from tweepy import API #Twitter API to interact with Twitter data
-import json
-import stattools
 from os import environ #For keeping secret keys - so that no one sees them on GitHub
+import json
 import time
 ###********** Authentication Keys ***********
 CONSUMER_KEY = environ['CONSUMER_KEY']
