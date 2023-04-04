@@ -26,7 +26,7 @@ class TwitterStream(tweepy.StreamingClient):
         print("You have successfully connected")
     def on_tweet(self, tweet):
         if tweet.referenced_tweets == None: 
-            blockedUsers = ['995315995840536576','866227142429999105','2467565462']
+            blockedUsers = ['995315995840536576','866227142429999105','1476270446370828290','1389686298798174208','1471968770575028233','1476085378209787907','973953546809946112','1018541398683987968','21517400','333430540','1427191265964265482','1104024011707764736','954775174024482816','1552098804303896580','1319400502413676544','857628671976153088','1400837332941611008','1358003167951208448','1541944633','1358676411393978368','1314128451209748480','921673129231077376','1249831869279059968','1197373968530968576','1002292364512292864','1161673407815135238','966073357723750400','244073609','1050436671358025728','1300108986793025542','1344050232506478592','4851188354','924728316','1315551732974317570','1119074582533746688','1447137290095038465','1518937268777779202','1133535860727717891','1423440728034787330','1286081035600629765','1104024011707764736','2943019953','1185827954565304320','4863531979','1329542741726961665','1254439982439202818','1096510105561059328','356151449','3192614035','970037909121314816','293492762','1213376164812607488','2776781889','1413229495746764816','1458568111439892480','1435178496377114627','1089255188878319617','1166343075922415618','1260692428962627594','850117639754088449','1537345857506492417','4872636304','129364320','2316081662','2343534998','1447652109420310533','1289331842076880905','780517716713021440','1448663588097257472','89189819','707744577873059842','1526244399117647872','735572984694476800','1170575543064043520','929894326573895683','1529061381189812226','1111645631175712768','4236288515','1089230731648397313','1522446530065666054','1319146865066233861','1445113530492100617','935711715999735808','1398125508144119812','1619498032550055936','961627558897967112','1418107523559796738','913358844272750592','1626270030001324034','1428935255252160517','1236933295134445568']
             blockedUsersInt = [eval(i) for i in blockedUsers]
             userID = int(tweet.author_id)
             blockedID = []
@@ -36,9 +36,28 @@ class TwitterStream(tweepy.StreamingClient):
             if len(blockedID) !=0:
                 print("**********************************************")
                 print("Oppsssssssssssssssssssssssssss!")
-                print("Sorry, this TWEEP's tweets with the ID '{}' have been flagged by our Algorithm. As such, a breach of our retweet policy means a retweet isn't possible. Contact @Admin Gerald Manzu - Developer, for a clarification of this policy and the algorithm".format(blockedID))
-                print("The tweet content is '{}'".format(tweet.text))
                 print("**********************************************")
+                return
+            
+            blocked_words=['dinka','nuer','ethnocide','cheater','Tigray', 'TPLF','genocide','sex','porn','fuck','dog', 'oromo','bokoharam',
+            'ugly','horny', 'bitch','penis','vagina','Illuminati', 'pornography','tribes', 'sarmuta',
+            'biafra','WarsGenerator','authenticfabric', 'timor','ambazon','Email List',
+            'nuer tribe', 'dinka tribe', 'killing','genocide','email list']
+            blocked_words_final = []
+
+            for word in blocked_words:
+                blocked_words_final.append(word.lower())
+            for word in blocked_words:
+                blocked_words_final.append(word.upper())
+            for word in blocked_words:
+                blocked_words_final.append(word.capitalize())
+
+            blockedWordMonitor = []
+            for word in blocked_words_final:
+                if word in tweet.text:
+                    blockedWordMonitor.append(word)
+            if len(blockedWordMonitor) != 0:
+                print("The word '{}' is blocked".format(blockedWordMonitor))
                 return
             else:
                 print(tweet.text)
@@ -67,7 +86,7 @@ class TwitterStream(tweepy.StreamingClient):
 
     
 stream = TwitterStream(BEARER_TOKEN, wait_on_rate_limit=True)
-rule = tweepy.StreamRule("(South Sudan OR South Sudanese OR #SouthSudanese OR junubin OR junub bot OR junubeen OR #SSOT_tweets OR #SouthSudan OR #SSOT OR @junub_bot OR @mahnzu) (-is:retweet -is:reply)")
+rule = tweepy.StreamRule("(South Sudan OR South Sudanese OR #SouthSudanese OR junubin OR junub bot OR junubeen OR #SSOT_tweets OR #SouthSudan OR #SSOT OR @junub_bot OR @mahnzu) (-is:reply)")
 stream.add_rules(rule)
 stream.filter(tweet_fields=["referenced_tweets"],expansions=["author_id"], user_fields="created_at,description,location,name,protected,username,verified")
 
