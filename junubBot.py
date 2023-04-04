@@ -70,7 +70,7 @@ class TwitterStream(tweepy.StreamingClient):
                 client.retweet(tweet.id)
                 print("Successfully retweeted a tweet from this id {}".format(userID))
                 print(type(userID))
-                time.sleep(50)
+                time.sleep(25)
     
     # def on_data(self, data):
     #     tweep_data = json.loads(data)
