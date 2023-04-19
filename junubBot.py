@@ -80,4 +80,4 @@ stream = TwitterStream(BEARER_TOKEN, wait_on_rate_limit=True)
 rule = tweepy.StreamRule("(South Sudan OR South Sudanese OR #SouthSudanese OR junubin OR junub bot OR junubeen OR #SSOT_tweets OR #SouthSudan OR #SSOT OR @junub_bot OR @mahnzu) (-is:reply)")
 stream.add_rules(rule)
 stream.filter(tweet_fields=["referenced_tweets"],expansions=["author_id"], user_fields="created_at,description,location,name,protected,username,verified")
-#This bot account
+#This bot accoun
